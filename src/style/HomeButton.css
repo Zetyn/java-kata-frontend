@@ -1,0 +1,14 @@
+.buttonStyle{
+    height: 94vh;
+    width: 33.3%;
+    font-size: 32px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+}
+
+.buttonStyle:hover{
+
+}
