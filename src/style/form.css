@@ -1,0 +1,72 @@
+.form__subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #aaa;
+    text-align: center;
+}
+.form__field {
+    margin-bottom: 15px;
+    position: relative;
+}
+.form__input-wrap {
+    position: relative;
+}
+.form__input {
+    padding: 5px 12px;
+    width: 100%;
+    height: 32px;
+}
+.form__input, .form__textarea {
+    margin: 0;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 20px;
+    border-radius: 3px;
+    color: #ddd;
+    border: 1px solid #3b3d45;
+    max-width: 100%;
+}
+.form__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 15px;
+    border-top: solid 1px #38383a;
+}
+.form-input {
+    padding: 5px 12px;
+    width: 100%;
+    height: 32px;
+
+    margin: 0;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 20px;
+    border-radius: 3px;
+    color: #ddd;
+    border: solid 1px #3d3b45;
+    max-width: 100%;
+}
+.form__label {
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+select.form__input {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: 97% 50%;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    padding-right: 22px;
+}

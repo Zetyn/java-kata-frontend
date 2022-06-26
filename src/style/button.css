@@ -1,0 +1,91 @@
+.buttons-stretch {
+    display: flex;
+}
+.button {
+    display: inline-block;
+    min-height: 16px;
+    height: 32px;
+    padding: 0 16px;
+    color: #babbbd;
+    line-height: 32px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: none;
+    text-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    outline: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity .1s ease,color .1s ease,background .1s ease;
+    transition: opacity .1s ease,color .1s ease,background .1s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.button_green {
+    background-color: #3cce7b;
+    color: #fff;
+}
+.buttons-stretch .button + .button {
+    margin-left: 10px;
+}
+.buttons-stretch .button {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+}
+.button + .button {
+    margin-left: 5px;
+}
+.button_white {
+    background: #1C1C1E;
+    color: #ddd;
+    border: 1px solid hsla(240,5%,48%,.1);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+}
+.button_sm {
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 0 8px;
+    font-weight: 400;
+}
+.button_primary {
+    background-color: #ffa332;
+    color: #fff;
+}
+.button_block {
+    display: block;
+    width: 100%;
+}
+.button_block + .button_block {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.button_md {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+}
+.header-button__icon {
+    position: relative;
+    height: 36px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease,color .2s ease;
+    transition: background-color .2s ease,color .2s ease;
+}

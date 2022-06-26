@@ -1,0 +1,24 @@
+.search-input {
+    height: 36px;
+}
+
+.search__head {
+    margin-bottom: 14px;
+}
+.search__header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.search__title {
+    font-size: 21px;
+    line-height: 27.3px;
+}
+.search-filter-list-title {
+    padding: 10px 14px;
+    color: #868e96;
+    font-weight: 600;
+}

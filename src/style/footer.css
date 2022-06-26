@@ -1,0 +1,9 @@
+.footer {
+    margin-top: 15px;
+    position: relative;
+}
+.footer__inner {
+    padding: 20px 40px 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

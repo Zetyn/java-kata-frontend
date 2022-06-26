@@ -1,11 +1,6 @@
 import AppNavbar from './AppNavBar';
 import { Link } from 'react-router-dom';
 import { Button, Container } from 'reactstrap';
-import buttonStyle from '../style/HomeButton.css';
-import BackgroundBook from '../img/book.jpg';
-import BackgroundMagazine from '../img/magazines.jpg';
-import BackgroundAuthor from '../img/author.jpg';
-
 
 const Home = () => {
 
@@ -23,7 +18,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="section paper">
-                            <div className="section-header section-header-tabs">
+                            <div className="section__header section-header-tabs">
                                 <strong className="section-header-title">New books</strong>
                             </div>
                             <div className="section-body">

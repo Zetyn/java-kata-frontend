@@ -1,15 +1,3 @@
-import {
-    FormControl,
-    Input,
-    InputLeftElement,
-    InputGroup,
-    FormLabel,
-    Button,
-    Container,
-    Text,
-    Link
-} from "@chakra-ui/react";
-import {EmailIcon, LockIcon} from "@chakra-ui/icons";
 import AppNavbar from "./AppNavBar";
 import {Link as ReachLink} from "react-router-dom";
 import {useForm} from "react-hook-form";
@@ -27,10 +15,12 @@ const Login = () => {
     const {register, handleSubmit, formState: {errors}} = useForm({resolver: yupResolver(validationSchema)});
 
     const onSubmit = data => {
+        console.log("submit");
         authService.login(data.email, data.password);
         setTimeout(function tick() {
             window.location.href = '/';
-        }, 100);
+        }, 300);
+
     };
 
     return (
@@ -61,7 +51,6 @@ const Login = () => {
                                         </div>
                                         <div className="form__footer">
                                             <button className="button button_primary button_md" type="submit">Sign in</button>
-                                            <ReachLink to="/library/login/SignUp"><button className="link-default">Sign up</button></ReachLink>
                                         </div>
                                     </form>
                                 </div>

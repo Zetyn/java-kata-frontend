@@ -1,0 +1,119 @@
+
+.section {
+    margin-bottom: 17px;
+}
+.section-body {
+    padding: 10px 14px;
+}
+.section__header {
+    padding: 12px 13px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.section-header-title {
+    font-weight: 600;
+    line-height: 1;
+}
+.section-header-tabs {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    min-height: 45px;
+    position: relative;
+}
+.section-header-tabs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e5e5e5;
+}
+.section__footer {
+    padding: 13px;
+    border-top: 1px solid #38383a;
+}
+.section__footer, .section__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.media-section_stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+}
+.media-section__col {
+    width: 50%;
+}
+.media-section__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.media-section__title {
+    font-weight: 600;
+    font-size: 15px;
+}
+.media-stats {
+    display: table;
+    width: 100%;
+}
+.media-stats-item {
+    display: table-row;
+}
+.media-stats-item__title {
+    white-space: nowrap;
+}
+.media-stats-item__column {
+    display: table-cell;
+    padding: 4px 6px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+.media-stats-item__column_progress {
+    width: 100%;
+}
+.media-stats-item__percent {
+    font-weight: 700;
+}
+.media-stats-item__count {
+    color: #868e96;
+}
+.media-stats-item__progress {
+    height: 8px;
+    border-radius: 8px;
+    background: hsla(240,5%,48%,.1);
+}
+.progress {
+    position: relative;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #38383a;
+    overflow: hidden;
+}
+.media-stats-item__progress-bar {
+    border-radius: inherit;
+    background: #ffa332;
+}
+.progress__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -webkit-transition: width .1s ease;
+    transition: width .1s ease;
+}

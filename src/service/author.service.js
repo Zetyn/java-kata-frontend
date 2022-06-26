@@ -6,19 +6,27 @@ const getAll = () => {
 }
 
 const create = data => {
-    return httpClient.post('/authors',data,authHeader());
+    return httpClient.post('/authors',data,{headers : authHeader()});
 }
 
 const get = id => {
-    return httpClient.get(`/authors/${id}`,authHeader());
+    return httpClient.get(`/authors/${id}`,{headers : authHeader()});
 }
 
 const update = (id,data) => {
-    return httpClient.put(`/authors/edit/${id}`,data,authHeader());
+    return httpClient.put(`/authors/edit/${id}`,data,{headers : authHeader()});
 }
 
 const remove = id => {
-    return httpClient.delete(`/authors/${id}`,authHeader());
+    return httpClient.delete(`/authors/${id}`,{headers : authHeader()});
 }
 
-export default { getAll, create, get, update, remove };
+const exportedObject = {
+    getAll,
+    create,
+    get,
+    update,
+    remove
+};
+
+export default exportedObject;

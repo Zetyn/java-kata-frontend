@@ -1,0 +1,35 @@
+.page {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 97vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+.page-title {
+    font-size: 17px;
+    position: relative;
+    margin: 0 0 12px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.page__inner {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.page-wrapper {
+    width: 100%;
+    float: none;
+}
+.page__wrapper {
+    width: calc(100% - 340px);
+}
+.page-wrapper-left {
+    float: left;
+}
+.paper {
+    background: #1C1C1E;
+    border-radius: 4px;
+}

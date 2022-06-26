@@ -1,15 +1,3 @@
-import {
-    FormControl,
-    Input,
-    InputLeftElement,
-    InputGroup,
-    FormLabel,
-    Button,
-    Container,
-    Text,
-    Link
-} from "@chakra-ui/react";
-import { EmailIcon,LockIcon } from "@chakra-ui/icons";
 import AppNavbar from "./AppNavBar";
 import { Link as ReachLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -44,7 +32,7 @@ const Registration = () => {
                                     <h4 className="modal__title text-center">Authorization</h4>
                                 </div>
                                 <div className="modal__body">
-                                    <form>
+                                    <form onSubmit={handleSubmit(onSubmit)}>
                                         <div className="form__field">
                                             <div className="form__input-wrap">
                                                 <input className="form__input" type="text" name="firstName" placeholder="First name" id="firstName" {...register('firstName')}/>
@@ -67,7 +55,6 @@ const Registration = () => {
                                         </div>
                                         <div className="form__footer">
                                             <button className="button button_primary button_md" type="submit">Sign up</button>
-                                            <ReachLink to="/library/login/SignIn"><button className="link-default">Sign in</button></ReachLink>
                                         </div>
                                     </form>
                                 </div>

@@ -1,0 +1,36 @@
+.container-responsive {
+    max-width: 1200px;
+}
+.container-offset {
+    margin-top: 17px;
+}
+.custom-container {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 0 15px;
+    width: 100%;
+    height: auto;
+}
+.container_center {
+    max-width: 870px;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1020px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 990px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+}

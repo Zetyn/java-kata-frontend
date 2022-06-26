@@ -1,0 +1,19 @@
+.ads {
+    overflow: hidden;
+    max-width: 1020px;
+    width: 100%;
+    text-align: center;
+}
+.ads.section {
+    margin-left: auto;
+    margin-right: auto;
+}
+.ads__wrap {
+    display: block;
+    max-width: 100%;
+}
+.ads__title {
+    padding: 7px;
+    font-size: 14px;
+    color: #aaa;
+}

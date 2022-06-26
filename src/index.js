@@ -3,15 +3,30 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ChakraProvider} from "@chakra-ui/react";
-
+import "../src/style/App.css";
+import "../src/style/header.css";
+import "../src/style/container.css";
+import "../src/style/media.css";
+import "../src/style/button.css";
+import "../src/style/tabs.css";
+import "../src/style/page.css";
+import "../src/style/profile.css";
+import "../src/style/choices.css";
+import "../src/style/uploader.css";
+import "../src/style/section.css";
+import "../src/style/search.css";
+import "../src/style/menu.css";
+import "../src/style/form.css";
+import "../src/style/search-genres.css";
+import "../src/style/footer.css";
+import "../src/style/authorization.css";
+import "../src/style/reader.css";
+import "../src/style/ads.css";
 
 ReactDOM.render(
-  <ChakraProvider>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  </ChakraProvider> ,
+     <React.StrictMode>
+         <App />
+     </React.StrictMode>,
   document.getElementById('root')
 );
 

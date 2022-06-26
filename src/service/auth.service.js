@@ -24,7 +24,7 @@ const login = (email,password) => {
 };
 
 const updateUser = data => {
-    return httpClient.put("/profile",data,authHeader());
+    return httpClient.put("/profile",data,{headers : authHeader()});
 }
 
 const logout = () => {
@@ -38,4 +38,12 @@ const userInfo = () => {
     return JSON.parse(localStorage.getItem("user"));
 };
 
-export default {register,login,logout,userInfo,updateUser};
+const exportedObject = {
+    register,
+    login,
+    logout,
+    userInfo,
+    updateUser
+};
+
+export default exportedObject;
